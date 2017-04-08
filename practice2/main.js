@@ -28,5 +28,12 @@ $("#info").next().on("click", function(){
   $("#lead-banner").slideUp(2000);
 });
 
+// adding content
+var phrase = "<div style='margin: 4% 0; padding: 3%; text-align: center; font-size: 20px; background: #eee'>Hope you enjoyed your visit</div>";
+
+$("#line").on("mouseover", function(){
+$("#contact-methods").append(phrase);
+$("#line").off();
+});
 
 });
