@@ -1,5 +1,4 @@
 
-
 // fade in / out
 $(document).ready(function(){
   $("#logo").on("click", function(){
@@ -35,5 +34,24 @@ $("#line").on("mouseover", function(){
 $("#contact-methods").append(phrase);
 $("#line").off();
 });
+
+// Example of rotating through showing elements (in this case blockquotes)
+
+var quoteBlocks = $("blockquote");
+var currentQuote = 0;
+
+  function changeQuote () {
+    $(quoteBlocks[currentQuote]).fadeOut(300, function(){
+
+        if (currentQuote == quoteBlocks.length -1) {
+          currentQuote = 0;
+        } else {
+          currentQuote++;
+        }
+        $(quoteBlocks[currentQuote]).fadeIn(300);
+    });
+}
+
+var quoteTimer = setInterval(changeQuote, 3000);
 
 });
