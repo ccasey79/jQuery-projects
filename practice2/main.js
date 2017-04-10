@@ -22,8 +22,8 @@ $(".banner-title").next().on("mouseover", function(){
   $(this).hide(1000);
 });
 
-// slideUp
-$("#info").next().on("click", function(){
+//slideUp
+$("#extend").on("click", function(){
   $("#lead-banner").slideUp(2000);
 });
 
@@ -53,5 +53,9 @@ var currentQuote = 0;
 }
 
 var quoteTimer = setInterval(changeQuote, 3000);
+
+$("#info").next().on("click", function() {
+  $("#extend").animate({"width" : "100px", "opacity" : "0.7"}, 500, "swing");
+  });
 
 });

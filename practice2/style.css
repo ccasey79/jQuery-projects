@@ -358,3 +358,19 @@ blockquote {
 blockquote:first-of-type {
   display: block;
 }
+
+#extend {
+  width: 100px;
+  background: #9fdf9f;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1%;
+  height: 25.8px;
+  float: right;
+  margin-right: 67%;
+  margin-top: -4.8%;
+  opacity: 0;
+  font-size: 18px;
+  color: grey;
+  cursor: pointer;
+}
