@@ -33,6 +33,7 @@ header h1{
     background: url(images/logo.png) no-repeat;;
     width: 140px;
     float: left;
+    cursor: pointer;
 }
 
 header nav{
@@ -148,7 +149,7 @@ p.tags{
     text-align: center;
     color: #4e4e4e;
     font-size: 20px;
-    line-height: 1.6em; 
+    line-height: 1.6em;
 }
 
 footer{
@@ -177,7 +178,7 @@ footer li{
     margin: 20px 0;
     font-size: 14px;
     line-height: 1.6em;
-} 
+}
 
 footer:after{
     content: "";
@@ -331,4 +332,3 @@ header nav ul.open{
 }
 
 }
-
