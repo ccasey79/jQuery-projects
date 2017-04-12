@@ -56,3 +56,8 @@ button {
   -moz-transition: background 0.7s;
   transition: background 0.7s;
 }
+
+.lead-banner {
+  width: 100%;
+  margin-left: 10%;
+}

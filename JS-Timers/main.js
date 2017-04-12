@@ -13,7 +13,6 @@ function showMessage() {
 setTimeout(showMessage, 2000);
 // calling the showMessage function & setting a time of 3 second.
 
-
 // creating an element (link), then adding to the dom.
 // adding the href as well to the link.
 // message is the id of the element.
@@ -39,7 +38,6 @@ var colourChanger = document.getElementById("colour-changer");
 var colours = ["red", "blue", "green", "pink"];
 var counter = 0;
 
-
 function changeColour () {
 
   if (counter >= colours.length) {
@@ -51,9 +49,12 @@ function changeColour () {
 }
 
 var stopChanger = setInterval(changeColour, 3000); // stop colour change
-
     button.onclick = function() {
-
     clearInterval(stopChanger);
-
   };
+
+$(document).ready(function(){
+  $("button").on("click", function() {
+    $(".lead-banner").slideUp(3000);
+  });
+});
