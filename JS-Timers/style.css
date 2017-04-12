@@ -33,3 +33,26 @@ transition: opacity 0.7s;
 -moz-transition: opacity 0.7s;
 transition: opacity 0.7s
 }
+
+button {
+  background: #008080;
+  border-radius: 5px;
+  width: 150px;
+  height: 36px;
+  margin-top: 4%;
+  margin-left: 44%;
+  font-family: tahoma;
+  font-size: 1rem;
+}
+
+#colour-changer {
+  width: 200px;
+  height: 100px;
+  margin: 30px auto;
+  border: 1px solid #000;
+  background: #fff;
+
+  -webkit-transition: background 0.7s;
+  -moz-transition: background 0.7s;
+  transition: background 0.7s;
+}
