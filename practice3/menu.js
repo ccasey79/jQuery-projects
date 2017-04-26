@@ -11,10 +11,15 @@ $(document).ready(function(){
       $("#main-banner").slideUp(3000);
     });
 
+    $("h4").on("mouseover", function(){
+      $(this).css({ "color": "#ff8080"});
+    });
+
     $("#latest-work h2").animate({"margin-left" : "42%"}, 3000);
 
-    $("#selling-points li").on("mouseover", function(){
-      $(this).css({ border: "1px solid purple"});
+
+    $("#selling-points li").on("click", function(){
+      $(this).css({"background": "#c2d6d6"});
     });
 
 
