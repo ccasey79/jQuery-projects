@@ -18,14 +18,45 @@ $(document).ready(function(){
 
   // APPEND / PREPEND
 
-  $('ul').append('<li>Tomato</li>');
-  $('ul').prepend('<li>Apple</li>');
+  //$('ul').append('<li>Tomato</li>');
+  //$('ul').prepend('<li>Apple</li>');
 
-  $('ul').before('<h4>Hello</h4>')
-  $('ul').after('<h4>Goodbye</h4>')
+  //$('ul').before('<h4>Hello</h4>')
+  //$('ul').after('<h4>Goodbye</h4>')
 
-  $('ul').empty();  // makes elements inside disappear
+  //$('ul').empty();  // makes elements inside disappear
   //$('ul').detach(); // deletes
+
+
+  // ADD BLANK TARGET TO A LINK
+
+  //$('a').attr('target', '_blank');
+  //$('a')removeAttr('target');
+
+  // WRAP
+
+  //$('p').wrap('<h1>');
+
+  // ARRAY
+
+  // EACH - loop takes in two values, index & value
+
+  /*
+  myArr = ['Brad', 'Kelley', 'Nate', 'Jose'];
+  $.each(myArr, function(i, val){
+    $('#users').append('<li>'+ val + '</li>')
+  });
+  */
+
+  
+
+
+
+
+
+
+
+
 
 
 
