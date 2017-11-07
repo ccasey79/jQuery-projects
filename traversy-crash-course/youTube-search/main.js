@@ -30,8 +30,50 @@ $(document).ready(function(){
           right: '360px'
         }, 400, function(){});
       }
-  });
+   });
+
+   $('#search-form').submit(function(e){
+      e.preventDefault();
+      });
+})
 
 
 
-});
+  function search() {
+    // Clear results
+
+    $('#results').html('');
+    $('#buttons').html('');
+
+    // GET Form Input
+
+    q = $('#query').val();
+
+    // Run GET request on API
+
+    $.get(
+      "https://www.googleapis.com/youtube/v3/search", {
+        part: 'snippet, id',
+        q: q,
+        type: 'video',
+        key: 'AIzaSyDb4vnhnPmvuZqOGiZ1ygqSzL_m6COMvTw'},
+        function(data) {
+          var nextPageToken = data.nextPageToken;
+          var prevPageToken = data.prevPageToken;
+
+          // Log Data - from API (youTube)
+          console.log(data);
+
+          $.each(data.items, function(i, item){
+
+          // Get Output
+          var output = getOutput(item);
+
+          // Display Results
+          $('#results').append(output);
+
+
+          })
+     }
+  );
+}
